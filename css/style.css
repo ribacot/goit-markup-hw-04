@@ -117,6 +117,8 @@ button:hover {
 	background-color: var(--pressed-state);
 	color: var(--white);
 	border-color: var(--pressed-state);
+	box-shadow: 0px 2px 2px 0px #0000001f, 0px 2px 1px 0px #00000014,
+		0px 3px 1px 0px #0000001a;
 }
 
 img {
@@ -203,10 +205,21 @@ img {
 /* hero*/
 .hero {
 	text-align: center;
-
-	background-color: var(--hero-background);
+	max-width: 1440px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 188px;
 	padding-top: 188px;
+
+	background-color: var(--hero-background);
+	background-image: linear-gradient(
+			rgba(46, 47, 66, 0.7),
+			rgba(46, 47, 66, 0.7)
+		),
+		url(../images/webstudio/hero_background-min.jpg);
+	background-position: center;
+	background-size: contain;
 }
 
 .hero-title {
@@ -249,7 +262,31 @@ img {
 	flex-basis: calc(100% / 4 - var(--margin-gap));
 	margin-left: var(--margin-gap);
 }
+.features > .item::before {
+	display: flex;
+	content: "";
+	height: 110px;
+	margin-bottom: 8px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--light);
+}
 
+.features-strategy::before {
+	background-image: url(../images/webstudio/features/strategy.svg);
+}
+
+.features-punctuality::before {
+	background-image: url(../images/webstudio/features/punctuality.svg);
+}
+
+.features-diligence::before {
+	background-image: url(../images/webstudio/features/diligence.svg);
+}
+
+.features-technologies::before {
+	background-image: url(../images/webstudio/features/technologies.svg);
+}
 /* produkt */
 
 .list-produkt {
@@ -267,7 +304,10 @@ img {
 /* team */
 
 .team {
+	/* max-width: 1440px; */
 	background-color: var(--light);
+	/* margin-left: auto;
+	margin-right: auto; */
 }
 
 .list-team {
@@ -284,12 +324,11 @@ img {
 	border: #ffffff solid 1px;
 	border-bottom-left-radius: 1px;
 	border-bottom-right-radius: 1px;
-	box-shadow: 0px 2px 1px 0px #2e2f4214, 
-	0px 1px 1px 0px #2e2f4229,
+	box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
 		0px 1px 6px 0px #2e2f4214;
 }
 
-.card-team{
+.card-team {
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
@@ -342,7 +381,10 @@ img {
 	margin-bottom: 48px;
 }
 
-
+.portfolio-examples > .item:hover {
+	box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+		0px 1px 6px 0px #2e2f4214;
+}
 
 .portfolio-examples > .item:nth-child(3n) {
 	margin-right: 0;
@@ -352,13 +394,12 @@ img {
 	margin-bottom: 0;
 }
 
-.card-exemples{
+.card-exemples {
 	padding-left: 16px;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
 	border-left: var(--accent) solid 1px;
 	border-right: var(--accent) solid 1px;
-	 border-bottom: var(--accent) solid 1px;
+	border-bottom: var(--accent) solid 1px;
 }
-
