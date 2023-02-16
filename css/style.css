@@ -262,31 +262,21 @@ img {
 	flex-basis: calc(100% / 4 - var(--margin-gap));
 	margin-left: var(--margin-gap);
 }
-.features > .item::before {
-	display: flex;
-	content: "";
-	height: 110px;
-	margin-bottom: 8px;
-	background-repeat: no-repeat;
-	background-position: center;
+
+.features-head{
+		display: flex;
 	background-color: var(--light);
+justify-content: center;
+padding-bottom: 24px;
+padding-top: 24px;
+
+	
+}
+.features-icon{
+	width: 64px;
+	height: 64px;
 }
 
-.features-strategy::before {
-	background-image: url(../images/webstudio/features/strategy.svg);
-}
-
-.features-punctuality::before {
-	background-image: url(../images/webstudio/features/punctuality.svg);
-}
-
-.features-diligence::before {
-	background-image: url(../images/webstudio/features/diligence.svg);
-}
-
-.features-technologies::before {
-	background-image: url(../images/webstudio/features/technologies.svg);
-}
 /* produkt */
 
 .list-produkt {
@@ -304,10 +294,7 @@ img {
 /* team */
 
 .team {
-	/* max-width: 1440px; */
 	background-color: var(--light);
-	/* margin-left: auto;
-	margin-right: auto; */
 }
 
 .list-team {
@@ -331,6 +318,22 @@ img {
 .card-team {
 	padding-top: 32px;
 	padding-bottom: 32px;
+
+
+}
+.list-team-social-icon {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin-top: 8px;
+
+
+}
+.team-social-icon {
+	display: block;
+	width: 24px;
+	height: 24px;
+
 }
 
 /* footer */
