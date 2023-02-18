@@ -270,8 +270,8 @@ img {
 	background-color: var(--light);
 	justify-content: center;
 	align-items: center;
-	width: 264px;
-	height: 112px;
+	width: 100%;
+	min-height: 112px;
 	margin-bottom: 8px;
 }
 .features-icon {
