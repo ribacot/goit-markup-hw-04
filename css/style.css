@@ -89,7 +89,7 @@ body {
 	margin-top: 0;
 	padding: 0;
 }
-:focus{
+:focus {
 	outline: none;
 }
 
@@ -269,8 +269,9 @@ img {
 	display: flex;
 	background-color: var(--light);
 	justify-content: center;
-	padding-bottom: 24px;
-	padding-top: 24px;
+	align-items: center;
+	width: 264px;
+	height: 112px;
 	margin-bottom: 8px;
 }
 .features-icon {
@@ -351,6 +352,7 @@ img {
 	height: 16px;
 	fill: var(--white);
 }
+
 /* customers */
 
 .list-customers {
@@ -363,29 +365,32 @@ img {
 	margin-right: auto;
 }
 
+.item-customers {
+	width: 168px;
+}
+
 .link-customers {
 	display: flex;
-	width: 168px;
-	height: 88px;
-
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+	min-height: 88px;
 
 	border: 1px solid var(--subtitl-text);
 	border-radius: 4px;
 	color: var(--subtitl-text);
 }
 
-.link-customers:hover,
-.link-customers:focus {
-	border-color: var(--pressed-state);
-	color: var(--pressed-state);
-}
-
 .icon-customers {
 	fill: currentColor;
 	width: 105px;
 	height: 56px;
+}
+
+.link-customers:hover,
+.link-customers:focus {
+	border-color: var(--pressed-state);
+	color: var(--pressed-state);
 }
 
 /* footer */
@@ -481,8 +486,8 @@ img {
 	margin-bottom: 48px;
 }
 
-.portfolio-examples > .item:hover,
-.portfolio-examples > .item:focus {
+.link-examples:hover,
+.link-examples:focus {
 	box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
 		0px 1px 6px 0px #2e2f4214;
 }
@@ -500,7 +505,6 @@ img {
 	padding-top: 32px;
 	padding-bottom: 32px;
 
-	border-left: var(--accent) solid 1px;
-	border-right: var(--accent) solid 1px;
-	border-bottom: var(--accent) solid 1px;
+	border: var(--accent) solid 1px;
+	border-top: none;
 }
