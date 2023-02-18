@@ -89,9 +89,6 @@ body {
 	margin-top: 0;
 	padding: 0;
 }
-:focus {
-	outline: none;
-}
 
 .link:focus,
 .link:hover {
@@ -133,6 +130,9 @@ img {
 
 .head {
 	border-bottom: var(--accent) solid 1px;
+	box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px
+			rgba(46, 47, 66, 0.16),
+		0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .head > .container {
